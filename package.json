@@ -1,8 +1,14 @@
 {
-  "name": "tornado",
+  "name": "react-tamagui-template",
   "version": "0.1.0",
   "private": true,
+  "author": "luvvvdev",
   "dependencies": {
+    "@craco/craco": "^6.4.5",
+    "@tamagui/config-base": "^1.0.1-beta.193",
+    "@tamagui/react-native-svg": "^1.0.1-beta.193",
+    "@tamagui/shorthands": "^1.0.1-beta.193",
+    "@tamagui/theme-base": "^1.0.1-beta.193",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -12,15 +18,18 @@
     "@types/react-dom": "^18.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-native-web": "^0.18.9",
     "react-scripts": "5.0.1",
+    "tamagui": "^1.0.1-beta.193",
+    "tamagui-loader": "^1.0.1-beta.193",
     "typescript": "^4.8.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject"
   },
   "eslintConfig": {
     "extends": [

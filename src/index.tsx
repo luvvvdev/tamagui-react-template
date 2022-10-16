@@ -3,13 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { TamaguiProvider } from 'tamagui';
+import config from './tamagui.config'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+console.log(config)
+
 root.render(
   <React.StrictMode>
-    <App />
+    <TamaguiProvider config={config}>
+        <App />
+    </TamaguiProvider>
   </React.StrictMode>
 );
 
